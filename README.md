@@ -6,6 +6,57 @@ With Network Manager, you can now easily manage your internet requests, send and
 
 ## Usage
 
+#### Set Base URL
+```dart
+Settings Base URL -> NetworkManager("https://jsonplaceholder.typicode.com/",debugMode: true);
+```
+
+#### Set Request Methods: 
+```dart
+.setGET()  => "GET"
+.setPOST() => "POST"
+.setPUT() => "PUT"
+.setDELETE() => "DELETE"
+```
+#### Set TimeOuts: 
+```dart
+.setSendTimeout(1000) => Default Value 3000.
+```
+
+#### Set setReceiveTimeOut: 
+```dart
+.setReceiveTimeOut(1000) => Default Value 3000.
+```
+#### Set setQueryParameters: 
+```dart
+    .setQueryParameters({"name":"example"})
+```
+#### Set setHeader: 
+```dart
+    .setHeader({"Content-Type":"example"})
+```
+#### Set setBody: 
+```dart
+    .setBody({"Content-Type":"example"})
+```
+#### Set setContentType: 
+```dart
+    .setContentType("multipart-form")
+```
+#### Set setPath: 
+```dart
+    .setPath("api/v1/login")
+```
+#### Set execute: 
+```dart
+    .execute<T extends BaseResponseModel, K>(
+      T responseModel)
+
+      T extends  => Your Decode Model
+      T responseMode => Your Decode Model
+      K => Show View Model, ExampleModel, List<ExampleModel>
+```
+
 #### home_services.dart
 ```dart
 import 'package:network_manager/Network/Error/network_error.dart';
@@ -117,13 +168,8 @@ class NetworkClient {
 ```
 
 # ScreenShot
-![](https://meetmighty.com//codecanyon/document/mightynews/images/ic_logo.png)
+![](https://github.com/SercanKaya0/network_manager/blob/master/assets/screenshot.png?raw=true)
 
 
 
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.

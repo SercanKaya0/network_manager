@@ -10,6 +10,8 @@ class HomeServices {
   Future<void> getHomeList() async {
     Future.delayed(const Duration(seconds: 1));
     final response = await NetworkClient.instance.networkManager
+    .setSendTimeout(1000)
+    .setQueryParameters({"name":"example"})
         .setGET()
         .setPath("posts")
         .execute<HomeModel, List<HomeModel>>(HomeModel());
