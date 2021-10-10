@@ -1,7 +1,6 @@
 name: network_manager
 description: Easily manage your network requests with the Flutter builder pattern.
 version: 0.0.1
-publish_to: Sercan KAYA <Sercankayadevelop@gmail.com>
 metadata: "View/report issues: <https://github.com/SercanKaya0/network_manager/issues>"
 homepage: https://github.com/SercanKaya0/network_manager
 documentation: https://github.com/SercanKaya0/network_manager
