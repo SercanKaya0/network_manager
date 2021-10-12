@@ -1,6 +1,6 @@
-name: network_manager
+name: flutter_network_manager
 description: Easily manage your network requests with the Flutter builder pattern.
-version: 0.0.1
+version: 0.0.3
 metadata: "View/report issues: <https://github.com/SercanKaya0/network_manager/issues>"
 homepage: https://github.com/SercanKaya0/network_manager
 documentation: https://github.com/SercanKaya0/network_manager
@@ -12,8 +12,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  freezed: ^0.14.2
-  freezed_annotation: ^0.14.2
+  freezed: ^0.15.0+1
+  freezed_annotation: ^0.15.0
   dio: ^4.0.0
   connectivity: ^3.0.6
   logging: ^1.0.2
@@ -24,7 +24,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
-  build_runner: ^2.1.1
+  build_runner: ^2.1.4
 
 
 # For information on the generic Dart part of this file, see the

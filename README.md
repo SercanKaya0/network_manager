@@ -6,32 +6,32 @@ With Network Manager, you can now easily manage your internet requests, send and
 
 ## Usage
 
-#### Set Base URL
+### Set Base URL
 ```dart
 Settings Base URL -> NetworkManager("https://jsonplaceholder.typicode.com/",debugMode: true);
 ```
 
-#### Set Request Methods: 
+### Set Request Methods: 
 ```dart
 .setGET()  => "GET"
 .setPOST() => "POST"
 .setPUT() => "PUT"
 .setDELETE() => "DELETE"
 ```
-#### Set TimeOuts: 
+### Set TimeOuts: 
 ```dart
 .setSendTimeout(1000) => Default Value 3000.
 ```
 
-#### Set setReceiveTimeOut: 
+### Set setReceiveTimeOut: 
 ```dart
 .setReceiveTimeOut(1000) => Default Value 3000.
 ```
-#### Set setQueryParameters: 
+### Set setQueryParameters: 
 ```dart
     .setQueryParameters({"name":"example"})
 ```
-#### Set setHeader: 
+### Set setHeader: 
 ```dart
     .setHeader({"Content-Type":"example"})
 ```
@@ -39,7 +39,7 @@ Settings Base URL -> NetworkManager("https://jsonplaceholder.typicode.com/",debu
 ```dart
     .setBody({"Content-Type":"example"})
 ```
-#### Set setContentType: 
+### Set setContentType: 
 ```dart
     .setContentType("multipart-form")
 ```
@@ -47,7 +47,7 @@ Settings Base URL -> NetworkManager("https://jsonplaceholder.typicode.com/",debu
 ```dart
     .setPath("api/v1/login")
 ```
-#### Set execute: 
+### Set execute: 
 ```dart
     .execute<T extends BaseResponseModel, K>(
       T responseModel)
@@ -57,7 +57,7 @@ Settings Base URL -> NetworkManager("https://jsonplaceholder.typicode.com/",debu
       K => Show View Model, ExampleModel, List<ExampleModel>
 ```
 
-#### home_services.dart
+### home_services.dart
 ```dart
 import 'package:network_manager/Network/Error/network_error.dart';
 import 'package:network_manager/Network/Result/network_result.dart';
@@ -79,7 +79,7 @@ class HomeServices {
 
 ```
 
-#### home_model.dart
+### home_model.dart
 ```dart
 import 'package:network_manager/Network/Interface/model_interface.dart';
 

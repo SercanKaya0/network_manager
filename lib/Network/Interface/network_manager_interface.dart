@@ -16,5 +16,6 @@ abstract class INetworkManager {
   INetworkManager setHeader(Map<String, dynamic>? header);
   INetworkManager setSendTimeout(int sendTimeout);
   INetworkManager setReceiveTimeOut(int receiveTimeOut);
-  Future<Result<K, NetworkError>> execute<T extends BaseResponseModel, K>(T responseModel);
+  Future<Result<K, NetworkError>> execute<T extends BaseResponseModel, K>(
+      T responseModel);
 }

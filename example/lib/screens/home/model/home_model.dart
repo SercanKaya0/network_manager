@@ -1,4 +1,4 @@
-import 'package:network_manager/Network/Interface/model_interface.dart';
+import 'package:flutter_network_manager/Network/Interface/model_interface.dart';
 
 class HomeModel extends BaseResponseModel {
   HomeModel({

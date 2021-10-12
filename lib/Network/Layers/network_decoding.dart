@@ -1,8 +1,6 @@
 import 'package:dio/dio.dart';
 import '../Interface/model_interface.dart';
 
-
-
 class NetworkDecoding {
   static K decode<T extends BaseResponseModel, K>(
       {required Response<dynamic> response, required T responseType}) {
